@@ -13,7 +13,7 @@ This is the implementation of the H2Graphsum approach.
 
 # Dataset
 
-The whole datasets of Python and Java can be downloaded from [[Google Drive]https://drive.google.com/drive/folders/1kl8VBLxbVJUvV3aEF-Nx659d7Rkz86_Z?usp=drive_link.
+The whole datasets of Python and Java can be downloaded from [Google Drive](https://drive.google.com/file/d/1DC-7QXF-ogM7AhstgfiANPiOFIhJ9kCZ/view?usp=drive_link).
 
 
 **Note that:** 
@@ -21,7 +21,7 @@ The whole datasets of Python and Java can be downloaded from [[Google Drive]http
 - We provide 100 samples for train/valid/test datasets in the directory `data/python/raw_data/`, `data/java/raw_data/`, and `data/python_GypSum/raw_data/`. 
 - The python_GypSum dataset was originally built by the work [GypSum: Learning Hybrid Representations for Code Summarization](https://arxiv.org/pdf/2204.12916.pdf) for the model evaluation on the cleaned testing set, which is different from the python dataset in `data/python/raw_data/`.
 - To run on the whole datasets,
-  please download them from [Google Drive](https://drive.google.com/file/d/1eXCJEkCWuxi8xqMa_XAjg6OH4DNknT35/view?usp=share_link) for usage.
+  please download them from [Google Drive](https://drive.google.com/file/d/1DC-7QXF-ogM7AhstgfiANPiOFIhJ9kCZ/view?usp=drive_link) for usage.
 
 # Experiment on the Python(Java/Python_GypSum) Dataset
 
@@ -76,4 +76,4 @@ python s3_eval_cleaned_test_set.py"
 
 - All the parameters are set in `src_code/python(java,python_GypSum)/config.py`.
 - If a model has been trained, you can set the parameter "train_mode" in `config.py` to "False". Then you can predict the testing data directly by using the model that has been saved in `data/python/model/`.
-- We have provided in [Google Drive](https://drive.google.com/file/d/1eXCJEkCWuxi8xqMa_XAjg6OH4DNknT35/view?usp=share_link) all the files including the trained models as well as the log files of training processes (in `data/python(java,python_GypSum)/log/`). The user can download them for reference and model evaluation without running `s1_preprocessor.py` and model training. Still, don't forget to set the parameter "train_mode" in `config.py` to "False" for direct prediction and evaluation with these files.
+- We have provided in [Google Drive](https://drive.google.com/file/d/1DC-7QXF-ogM7AhstgfiANPiOFIhJ9kCZ/view?usp=drive_link) all the files including the trained models as well as the log files of training processes (in `data/python(java,python_GypSum)/log/`). The user can download them for reference and model evaluation without running `s1_preprocessor.py` and model training. Still, don't forget to set the parameter "train_mode" in `config.py` to "False" for direct prediction and evaluation with these files.
